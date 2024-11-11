@@ -47,3 +47,22 @@ img.avatar {
 .main-content code {
   font-family: "JetBrains Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+  color: #7561b6
+}

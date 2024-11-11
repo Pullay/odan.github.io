@@ -58,15 +58,27 @@ ssl-mode=DISABLED
 
 **<span style="color:red">Important: Don't skip this step!</span>**
 
+Note: You need to open the console (cmd) as Administrator.
+
+Change into the `mysql\bin` directory.
+
 ```cmd
 cd c:\xampp\mysql\bin
 ```
+
+Create a "data" directory.
+
+```cmd
+mkdir c:\xampp\mysql\bin\data
+```
+
+Initialize the data directory.
 
 ```cmd
 mysqld.exe --default-authentication-plugin=mysql_native_password --initialize-insecure --basedir=c:\xampp\mysql --datadir=c:\xampp\mysql\data
 ```
 
-Start the MySQL service (in your XAMPP Control Panel)
+Start the MySQL service in your XAMPP Control Panel or run `C:\xampp\mysql\bin\mysqld.exe`.
 
 ### Data restore
 
